@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import './MovieList.css'
+import './Details.css';
 
-// import Button from '@mui/material/Button';
+import Button from '@mui/material/Button';
 import { useParams, useHistory } from 'react-router-dom';
 
 function Details() {
@@ -13,7 +13,6 @@ function Details() {
     const movie = useSelector(store => store.movies);
     const genres = useSelector(store => store.genres);
     console.log('These are our genres store', genres);
-    // console.log('Trying to get just genres', genres.genre_id);
 
     const thisID = useParams();
     console.log('calling this ID', thisID);
@@ -31,38 +30,44 @@ function Details() {
     }, []);
 
     const genreNames = genres
-    .filter(genres => genres.movie_id === Number(thisID.id))
-    .map(genres => genres.genre_name);
+    .filter(genre => genre.movie_id === Number(thisID.id))
+    .map(genre => genre.genre_name);
 
     const home = (event) => {
         history.push('/')
         }
 
-        // console.log('log genres:', thisMovie.genre);
 
     return (
         <main>
-            <div>
-            <h1>Movie Details</h1>
+            <div className="details-container">
+            <h1 className="movie-details-title">Movie Details</h1>
 
-            <h1>{thisMovie.title}</h1>
+            <h2>{thisMovie.title}</h2>
+
             <img src={thisMovie.poster} alt={thisMovie.title}/>
-            <h2>{thisMovie.description}</h2>
-            <h1>Genres</h1>
+
+            <h4>Genres: {genreNames.join(', ')}</h4>
+
+            <h5>{thisMovie.description}</h5>
+          
             
             {/* <h3>
                 {genres.map((genre) => (
                     <li key={genre.id}>{genre.genre_name}</li>
                 ))}
             </h3> */}
-            <h3>{genreNames.join(', ')}</h3>
+            
             
             </div>
             
-            <button 
+            <Button 
                     variant='contained'
                     onClick={home}
-                    >HOME</button>
+                    >HOME</Button>
+
+            <br/>
+            <br/>
 
         </main>
 

@@ -2,3 +2,22 @@
     display : flex;
     flex-wrap: wrap;
 }
+.movie-card {
+    cursor: pointer;
+    padding: 30px;
+    border: 5px solid rgb(216, 191, 216);
+    margin: 20px;
+    text-align: center;
+    background-color: mediumslateblue;
+    color: aliceblue;
+
+}
+
+.movie-card h3 {
+    margin: 0;
+  }
+
+.movie-card img {
+max-width: 100%;
+height: auto;
+}
