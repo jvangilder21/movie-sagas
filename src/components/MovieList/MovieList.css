@@ -1,5 +1,6 @@
 .movies {
     display : flex;
+    justify-content: center; /* Center content horizontally */
     flex-wrap: wrap;
 }
 .movie-card {
@@ -8,9 +9,12 @@
     border: 5px solid rgb(216, 191, 216);
     margin: 20px;
     text-align: center;
+    width: calc(20% - 25px);
+    box-sizing: border-box; 
+    display: inline-block; /* Make the movie cards inline-block elements */
+    vertical-align: top; /* Align movie cards at the top of the row */
     background-color: mediumslateblue;
     color: aliceblue;
-
 }
 
 .movie-card h3 {
