@@ -8,7 +8,7 @@ import Details from '../Details/Details';
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className="header">
       <h1>The Movies Saga!</h1>
       </header>
       <Router>        

@@ -20,4 +20,6 @@
 .movie-card img {
 max-width: 100%;
 height: auto;
+box-shadow: 5px 10px 6px rgb(216, 191, 216);
+transition: box-shadow 0.3s ease;
 }

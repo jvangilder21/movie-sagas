@@ -2,13 +2,13 @@
   text-align: center;
 }
 
-
-.App-header {
+.header {
   background-color: mediumslateblue;
-  height: 150px;
-  padding: 20px;
+  padding: 25px;
   color: white;
 }
+
+
 
 .App-title {
   font-size: 1.5em;
