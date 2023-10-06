@@ -41,6 +41,10 @@ function Details() {
     return (
         <main>
             <div className="details-container">
+            <br/>
+            <br/>
+            <br/>
+            <div className="details-movie">
             <h1 className="movie-details-title">Movie Details</h1>
 
             <h2>{thisMovie.title}</h2>
@@ -49,6 +53,7 @@ function Details() {
 
             <h4>Genres: {genreNames.join(', ')}</h4>
 
+            </div>
             <h5>{thisMovie.description}</h5>
           
             
@@ -64,6 +69,7 @@ function Details() {
             <Button 
                     variant='contained'
                     onClick={home}
+                    style={{ backgroundColor: 'mediumslateblue' }}
                     >HOME</Button>
 
             <br/>

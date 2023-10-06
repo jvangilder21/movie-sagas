@@ -1,34 +1,47 @@
 .details-container {
     text-align: center;
   }
-.movie-details-title {
+
+.details-movie {
+    text-align: center;
+    border: 5px solid rgb(216, 191, 216);
+    width: 25%;
+    justify-content: center; /* Center content horizontally */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    
+
+}
+/* .movie-details-title {
 font-size: 24px;
 margin-bottom: 10px;
 color: rgb(216, 191, 216);
-}
+} */
 
 Button{
     background-color: mediumslateblue;
   }
-.details-container h2 {
+/* .details-container h2 {
 font-size: 20px;
 margin-top: 0;
-}
+} */
 .details-container img {
 max-width: 100%;
 height: auto;
 margin-top: 10px;
+box-shadow: 5px 10px 6px rgb(216, 191, 216);
+transition: box-shadow 0.3s ease;
 }
-.details-container h4 {
+/* .details-container h4 {
 font-size: 16px;
 margin-top: 10px;
-}
+} */
 
-.details-container h5 {
+/* .details-container h5 {
 font-size: 14px;
 margin-top: 10px;
-}
+} */
 
-.home-button {
+/* .home-button {
 margin-top: 20px;
-}
+} */
