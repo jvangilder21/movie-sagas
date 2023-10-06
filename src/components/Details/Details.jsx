@@ -54,8 +54,15 @@ function Details() {
             <h4>Genres: {genreNames.join(', ')}</h4>
 
             </div>
+            <br/>
+            <br/>
+
+            <div className="description-container">
             <h5>{thisMovie.description}</h5>
-          
+            </div>
+            <br/>
+            <br/>
+
             
             {/* <h3>
                 {genres.map((genre) => (

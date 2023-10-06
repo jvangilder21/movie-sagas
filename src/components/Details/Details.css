@@ -9,7 +9,7 @@
     justify-content: center; /* Center content horizontally */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
-    
+    border-radius: 5px;
 
 }
 /* .movie-details-title {
@@ -31,6 +31,15 @@ height: auto;
 margin-top: 10px;
 box-shadow: 5px 10px 6px rgb(216, 191, 216);
 transition: box-shadow 0.3s ease;
+}
+.description-container {
+    max-width: 800px; /* Set a maximum width for the description container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to create space around the description */
+    text-align: center; /* Center the text within the container */
+    border: 5px solid mediumslateblue; /* Add a border around the description */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 5px;
 }
 /* .details-container h4 {
 font-size: 16px;

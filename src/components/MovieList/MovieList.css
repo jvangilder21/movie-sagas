@@ -15,6 +15,8 @@
     vertical-align: top; /* Align movie cards at the top of the row */
     background-color: mediumslateblue;
     color: aliceblue;
+    border-radius: 5px;
+
 }
 
 .movie-card h3 {
